@@ -30,7 +30,7 @@ public class EmployeeServiceTest {
         employee1.setEmpId("0995");
 
         when(employeeRepo.save(employee1)).thenReturn(employee1);
-        assertEquals(true, employeeService.createEmployee(employee1));
+        assertEquals("Created", employeeService.createEmployee(employee1));
     }
 
     @Test
@@ -87,7 +87,7 @@ public class EmployeeServiceTest {
         Employee employee = new Employee();
 
         when(employeeRepo.existsById(employee.getEmpId())).thenReturn(true);
-        assertEquals(true, employeeService.updateEmployee(employee));
+        assertEquals("Updated", employeeService.updateEmployee(employee));
     }
 
     @Test
