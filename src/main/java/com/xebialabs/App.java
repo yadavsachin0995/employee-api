@@ -3,6 +3,8 @@ package com.xebialabs;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+// The app begins execution here
+
 @SpringBootApplication
 public class App 
 {
